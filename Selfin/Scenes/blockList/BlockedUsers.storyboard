@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Medium.otf">
+            <string>SFProText-Medium</string>
+        </array>
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Blocked Users-->
+        <scene sceneID="T9X-Zh-8CU">
+            <objects>
+                <viewController storyboardIdentifier="BlockedUsers" id="oKA-jc-ddh" customClass="BlockedUsersViewController" customModule="Selfin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0up-qN-tfC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="KiO-sv-wLl" customClass="BlockedUsersCollectionView" customModule="Selfin" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="scrollIndicatorInsets" minX="0.0" minY="10" maxX="0.0" maxY="0.0"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="sSm-lE-XiS">
+                                    <size key="itemSize" width="355" height="54"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="5" maxX="10" maxY="5"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BlockedUsersCell" id="jnK-8Y-cYj" customClass="BlockedUsersCell" customModule="Selfin" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="5" width="355" height="54"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="355" height="54"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="y0x-Bp-fHa">
+                                                    <rect key="frame" x="10" y="7" width="40" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="mgM-Pu-VGr"/>
+                                                        <constraint firstAttribute="width" constant="40" id="vMs-7r-02A"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="20"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7lF-8r-PNn">
+                                                    <rect key="frame" x="60" y="10" width="187" height="17"/>
+                                                    <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="14"/>
+                                                    <color key="textColor" red="0.094117647060000004" green="0.074509803920000006" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yrf-Bh-pY3">
+                                                    <rect key="frame" x="60" y="29" width="187" height="16"/>
+                                                    <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="13"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLe-Vg-lX4">
+                                                    <rect key="frame" x="257" y="7" width="80" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="vpc-GZ-gYX"/>
+                                                        <constraint firstAttribute="width" constant="80" id="waJ-QE-Rsv"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="14"/>
+                                                    <state key="normal" title="Un-Block">
+                                                        <color key="titleColor" red="0.97647058819999999" green="0.25098039220000001" blue="0.58039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="20"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="actionUnBlockUser:" destination="jnK-8Y-cYj" eventType="touchUpInside" id="83Y-7J-gr7"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="dLe-Vg-lX4" firstAttribute="centerY" secondItem="jnK-8Y-cYj" secondAttribute="centerY" id="21O-PQ-QeP"/>
+                                            <constraint firstItem="dLe-Vg-lX4" firstAttribute="leading" secondItem="7lF-8r-PNn" secondAttribute="trailing" constant="10" id="542-bS-QXG"/>
+                                            <constraint firstItem="7lF-8r-PNn" firstAttribute="top" secondItem="y0x-Bp-fHa" secondAttribute="top" constant="3" id="5TB-S8-1JR"/>
+                                            <constraint firstItem="y0x-Bp-fHa" firstAttribute="leading" secondItem="jnK-8Y-cYj" secondAttribute="leading" constant="10" id="RNF-Kh-CPR"/>
+                                            <constraint firstItem="yrf-Bh-pY3" firstAttribute="leading" secondItem="7lF-8r-PNn" secondAttribute="leading" id="cgB-Sp-1vn"/>
+                                            <constraint firstItem="yrf-Bh-pY3" firstAttribute="top" secondItem="7lF-8r-PNn" secondAttribute="bottom" constant="2" id="eOf-76-cPC"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="dLe-Vg-lX4" secondAttribute="trailing" constant="10" id="hQh-RJ-qmh"/>
+                                            <constraint firstItem="y0x-Bp-fHa" firstAttribute="centerY" secondItem="jnK-8Y-cYj" secondAttribute="centerY" id="iC8-ni-wra"/>
+                                            <constraint firstItem="7lF-8r-PNn" firstAttribute="leading" secondItem="y0x-Bp-fHa" secondAttribute="trailing" constant="10" id="rlQ-71-8lt"/>
+                                            <constraint firstItem="yrf-Bh-pY3" firstAttribute="trailing" secondItem="7lF-8r-PNn" secondAttribute="trailing" id="u5A-8u-nqw"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="buttonBlock" destination="dLe-Vg-lX4" id="U8F-aE-ilM"/>
+                                            <outlet property="imageview" destination="y0x-Bp-fHa" id="N2m-ph-kZd"/>
+                                            <outlet property="labelName" destination="yrf-Bh-pY3" id="o7S-la-12I"/>
+                                            <outlet property="labelUsername" destination="7lF-8r-PNn" id="Dlc-k2-S8f"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="KiO-sv-wLl" secondAttribute="bottom" id="Fth-0n-4NR"/>
+                            <constraint firstItem="kd8-1s-xWx" firstAttribute="trailing" secondItem="KiO-sv-wLl" secondAttribute="trailing" id="I5s-tz-nYU"/>
+                            <constraint firstItem="KiO-sv-wLl" firstAttribute="top" secondItem="kd8-1s-xWx" secondAttribute="top" id="bW8-zK-LLl"/>
+                            <constraint firstItem="KiO-sv-wLl" firstAttribute="leading" secondItem="kd8-1s-xWx" secondAttribute="leading" id="vhM-mP-oYJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kd8-1s-xWx"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Blocked Users" id="eAb-th-egd"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="collectionview" destination="KiO-sv-wLl" id="kMz-b2-jaj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TFG-vj-9WL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.80000000000000004" y="102.99850074962519"/>
+        </scene>
+    </scenes>
+</document>

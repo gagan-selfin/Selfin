@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cUr-gv-AsS">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Discover-->
+        <scene sceneID="TEs-3w-UqL">
+            <objects>
+                <viewController storyboardIdentifier="Discover" id="cUr-gv-AsS" customClass="DiscoverViewController" customModule="Selfin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rCk-Bf-itB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" layoutMarginsFollowReadableWidth="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jDk-Mx-Nxf" customClass="DiscoverCollectionView" customModule="Selfin" customModuleProvider="target">
+                                <rect key="frame" x="2" y="88" width="375" height="641"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="CBL-4A-Iz9">
+                                    <size key="itemSize" width="76" height="66"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="discover_cell" id="M7V-r3-huk" customClass="DiscoverCollectionViewCell" customModule="Selfin" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="76" height="66"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="76" height="66"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zBm-U3-t6t" firstAttribute="bottom" secondItem="jDk-Mx-Nxf" secondAttribute="bottom" id="9kw-1N-VdT"/>
+                            <constraint firstItem="jDk-Mx-Nxf" firstAttribute="top" secondItem="zBm-U3-t6t" secondAttribute="top" id="Amg-48-sQl"/>
+                            <constraint firstItem="jDk-Mx-Nxf" firstAttribute="leading" secondItem="zBm-U3-t6t" secondAttribute="leading" id="C2X-J5-RmM"/>
+                            <constraint firstItem="jDk-Mx-Nxf" firstAttribute="top" secondItem="rCk-Bf-itB" secondAttribute="top" id="GbE-5z-fRu"/>
+                            <constraint firstItem="zBm-U3-t6t" firstAttribute="bottom" secondItem="jDk-Mx-Nxf" secondAttribute="bottom" constant="-49" id="Mvp-ed-6Ia"/>
+                            <constraint firstItem="jDk-Mx-Nxf" firstAttribute="leading" secondItem="rCk-Bf-itB" secondAttribute="leading" id="ddM-R8-YmT"/>
+                            <constraint firstItem="jDk-Mx-Nxf" firstAttribute="trailing" secondItem="zBm-U3-t6t" secondAttribute="trailing" id="hDU-yh-5Bt"/>
+                            <constraint firstAttribute="trailing" secondItem="jDk-Mx-Nxf" secondAttribute="trailing" id="rxo-L2-MAi"/>
+                            <constraint firstItem="zBm-U3-t6t" firstAttribute="bottom" secondItem="jDk-Mx-Nxf" secondAttribute="bottom" id="wxe-C8-i2f"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zBm-U3-t6t"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Mvp-ed-6Ia"/>
+                                <exclude reference="wxe-C8-i2f"/>
+                                <exclude reference="GbE-5z-fRu"/>
+                                <exclude reference="ddM-R8-YmT"/>
+                                <exclude reference="rxo-L2-MAi"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="9kw-1N-VdT"/>
+                                <include reference="Mvp-ed-6Ia"/>
+                                <exclude reference="wxe-C8-i2f"/>
+                                <exclude reference="Amg-48-sQl"/>
+                                <exclude reference="C2X-J5-RmM"/>
+                                <include reference="GbE-5z-fRu"/>
+                                <include reference="ddM-R8-YmT"/>
+                                <exclude reference="hDU-yh-5Bt"/>
+                                <include reference="rxo-L2-MAi"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
+                    <tabBarItem key="tabBarItem" title="" image="discover" id="7g9-Kg-hil">
+                        <color key="badgeColor" red="0.75686274509999996" green="0.070588235289999995" blue="0.50980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                    <navigationItem key="navigationItem" title="Discover" id="CWs-gi-c3i">
+                        <barButtonItem key="rightBarButtonItem" image="search" id="sLk-vJ-E1O">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="btnSearchPressed:" destination="cUr-gv-AsS" id="B8k-zi-eSs"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="collectionView" destination="jDk-Mx-Nxf" id="KQe-rL-81i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fuU-a1-TEJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="457" y="121"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="discover" width="25" height="25"/>
+        <image name="search" width="21" height="21"/>
+    </resources>
+</document>

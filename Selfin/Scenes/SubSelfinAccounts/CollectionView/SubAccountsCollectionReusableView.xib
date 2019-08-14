@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Light.otf">
+            <string>SFProText-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SubAccountsReusableView" id="U6b-Vx-4bR" customClass="SubAccountsCollectionReusableView" customModule="Selfin" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="250"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VbA-8K-xvH" customClass="CustomShadowView" customModule="Selfin" customModuleProvider="target">
+                    <rect key="frame" x="10" y="15" width="300" height="215"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Selfin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JfB-aZ-sxh">
+                            <rect key="frame" x="77" y="10" width="146.5" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="22" id="hts-4I-pkv"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                            <color key="textColor" red="0.094117647060000004" green="0.074509803920000006" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is the place to see your followings. When you follow someone, their posts will be appear here!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gW0-JC-vR4">
+                            <rect key="frame" x="8" y="42" width="284" height="47"/>
+                            <fontDescription key="fontDescription" name="SFProText-Light" family="SF Pro Text" pointSize="13"/>
+                            <color key="textColor" red="0.094117647060000004" green="0.074509803920000006" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kbm-mi-APy">
+                            <rect key="frame" x="8" y="89" width="284" height="77"/>
+                            <subviews>
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrK-sh-P7D">
+                                    <rect key="frame" x="0.0" y="18.5" width="284" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="fC1-b7-NpF"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                    <state key="normal" title="Follow All Sub Selfin Accounts">
+                                        <color key="titleColor" red="0.97647058819999999" green="0.25098039220000001" blue="0.58039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="actionFollowAllSubSelfinAccounts:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="ZJx-qD-iq7"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="jrK-sh-P7D" firstAttribute="centerY" secondItem="kbm-mi-APy" secondAttribute="centerY" id="FPe-lE-nE1"/>
+                                <constraint firstAttribute="trailing" secondItem="jrK-sh-P7D" secondAttribute="trailing" id="JTV-iP-PDE"/>
+                                <constraint firstItem="jrK-sh-P7D" firstAttribute="leading" secondItem="kbm-mi-APy" secondAttribute="leading" id="j31-sp-qzG"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sub Selfin Accounts are Official Selfin Accounts an they are here to inspire you." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3QQ-o5-u6Q">
+                            <rect key="frame" x="8" y="166" width="284" height="29"/>
+                            <fontDescription key="fontDescription" name="SFProText-Light" family="SF Pro Text" pointSize="12"/>
+                            <color key="textColor" red="0.094117647060000004" green="0.074509803920000006" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="JfB-aZ-sxh" firstAttribute="centerX" secondItem="VbA-8K-xvH" secondAttribute="centerX" id="0rD-Nx-yLa"/>
+                        <constraint firstItem="kbm-mi-APy" firstAttribute="top" secondItem="gW0-JC-vR4" secondAttribute="bottom" id="3zZ-pF-rA4"/>
+                        <constraint firstItem="JfB-aZ-sxh" firstAttribute="top" secondItem="VbA-8K-xvH" secondAttribute="top" constant="10" id="Cx1-MN-3pK"/>
+                        <constraint firstItem="gW0-JC-vR4" firstAttribute="top" secondItem="JfB-aZ-sxh" secondAttribute="bottom" constant="10" id="G3E-Ns-vsp"/>
+                        <constraint firstItem="3QQ-o5-u6Q" firstAttribute="leading" secondItem="kbm-mi-APy" secondAttribute="leading" id="OAl-PI-qNS"/>
+                        <constraint firstItem="kbm-mi-APy" firstAttribute="leading" secondItem="gW0-JC-vR4" secondAttribute="leading" id="QiU-zn-fmI"/>
+                        <constraint firstItem="kbm-mi-APy" firstAttribute="trailing" secondItem="gW0-JC-vR4" secondAttribute="trailing" id="QjF-wU-oba"/>
+                        <constraint firstAttribute="trailing" secondItem="gW0-JC-vR4" secondAttribute="trailing" constant="8" id="RG3-Nq-vGt"/>
+                        <constraint firstItem="gW0-JC-vR4" firstAttribute="leading" secondItem="VbA-8K-xvH" secondAttribute="leading" constant="8" id="Z0V-E0-JqD"/>
+                        <constraint firstItem="3QQ-o5-u6Q" firstAttribute="top" secondItem="kbm-mi-APy" secondAttribute="bottom" id="ZlS-JI-y8f"/>
+                        <constraint firstItem="3QQ-o5-u6Q" firstAttribute="trailing" secondItem="kbm-mi-APy" secondAttribute="trailing" id="oVO-mo-hn5"/>
+                        <constraint firstAttribute="bottom" secondItem="3QQ-o5-u6Q" secondAttribute="bottom" constant="20" id="rat-a2-crx"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="VbA-8K-xvH" firstAttribute="top" secondItem="VXr-Tz-HHm" secondAttribute="top" constant="15" id="3PK-yI-9uc"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="bottom" secondItem="VbA-8K-xvH" secondAttribute="bottom" constant="20" id="GMq-YU-lfo"/>
+                <constraint firstItem="VbA-8K-xvH" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="10" id="XKG-pT-6oq"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="VbA-8K-xvH" secondAttribute="trailing" constant="10" id="mVA-Vh-Pgq"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <connections>
+                <outlet property="buttonFollow" destination="jrK-sh-P7D" id="ZnN-NN-nwL"/>
+            </connections>
+            <point key="canvasLocation" x="33.600000000000001" y="-76.46176911544228"/>
+        </collectionReusableView>
+    </objects>
+</document>

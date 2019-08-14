@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Light.otf">
+            <string>SFProText-Light</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Refer Friends View Controller-->
+        <scene sceneID="IkA-fy-dQn">
+            <objects>
+                <viewController storyboardIdentifier="ReferFriends" id="D0o-1s-epo" customClass="ReferFriendsViewController" customModule="Selfin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3al-2r-kTl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lcl-RD-KhB">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EarnStar_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="PQb-Rs-NiI">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="299"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="299" id="kCQ-IW-orz"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hgo-Zb-sMA">
+                                <rect key="frame" x="10" y="230" width="300" height="328"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Refer Friends" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sa8-aa-Lh9">
+                                        <rect key="frame" x="82" y="20" width="136.5" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="xhU-Yc-ses"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SFProText-Light" family="SF Pro Text" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Selfin can help me to get more followers and stars if I allow Selfin to connect my contacts." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bi-tI-vxr">
+                                        <rect key="frame" x="30" y="55" width="240" height="86"/>
+                                        <fontDescription key="fontDescription" name="SFProText-Light" family="SF Pro Text" pointSize="18"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Star" translatesAutoresizingMaskIntoConstraints="NO" id="FEA-Rl-AYd">
+                                        <rect key="frame" x="77" y="156" width="146" height="38"/>
+                                    </imageView>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Npz-Lu-5af">
+                                        <rect key="frame" x="20" y="217" width="260" height="45"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="iw0-G7-f4V"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SFProText-Light" family="SF Pro Text" pointSize="22"/>
+                                        <state key="normal" title="I DON'T WANT STARS">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="btnDontWantStarsPressed:" destination="D0o-1s-epo" eventType="touchUpInside" id="OFk-YK-VB2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0di-6R-Qh0">
+                                        <rect key="frame" x="20" y="268" width="260" height="45"/>
+                                        <fontDescription key="fontDescription" name="SFProText-Light" family="SF Pro Text" pointSize="22"/>
+                                        <state key="normal" title="GET MORE STARS">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="btnGetStarsPressed:" destination="D0o-1s-epo" eventType="touchUpInside" id="VaQ-J9-ngY"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="0di-6R-Qh0" firstAttribute="top" secondItem="Npz-Lu-5af" secondAttribute="bottom" constant="6" id="3w3-XR-CgZ"/>
+                                    <constraint firstItem="4bi-tI-vxr" firstAttribute="leading" secondItem="hgo-Zb-sMA" secondAttribute="leading" constant="30" id="6aw-ch-Jer"/>
+                                    <constraint firstItem="4bi-tI-vxr" firstAttribute="top" secondItem="Sa8-aa-Lh9" secondAttribute="bottom" constant="13" id="7yi-Zg-P14"/>
+                                    <constraint firstAttribute="bottom" secondItem="0di-6R-Qh0" secondAttribute="bottom" constant="15" id="GT8-I9-ae5"/>
+                                    <constraint firstAttribute="trailing" secondItem="4bi-tI-vxr" secondAttribute="trailing" constant="30" id="Gz6-Iw-4Kc"/>
+                                    <constraint firstItem="Sa8-aa-Lh9" firstAttribute="centerX" secondItem="hgo-Zb-sMA" secondAttribute="centerX" id="K7g-Rx-DzT"/>
+                                    <constraint firstItem="Sa8-aa-Lh9" firstAttribute="top" secondItem="hgo-Zb-sMA" secondAttribute="top" constant="20" id="P5a-M3-S32"/>
+                                    <constraint firstItem="FEA-Rl-AYd" firstAttribute="top" secondItem="4bi-tI-vxr" secondAttribute="bottom" constant="15" id="Qo3-8G-iuj"/>
+                                    <constraint firstAttribute="trailing" secondItem="Npz-Lu-5af" secondAttribute="trailing" constant="20" id="QtM-N4-sTR"/>
+                                    <constraint firstItem="FEA-Rl-AYd" firstAttribute="centerX" secondItem="hgo-Zb-sMA" secondAttribute="centerX" id="iMS-dJ-aDQ"/>
+                                    <constraint firstItem="Npz-Lu-5af" firstAttribute="leading" secondItem="hgo-Zb-sMA" secondAttribute="leading" constant="20" id="kzS-eU-FHb"/>
+                                    <constraint firstItem="0di-6R-Qh0" firstAttribute="leading" secondItem="Npz-Lu-5af" secondAttribute="leading" id="nel-UZ-YF2"/>
+                                    <constraint firstItem="0di-6R-Qh0" firstAttribute="height" secondItem="Npz-Lu-5af" secondAttribute="height" id="qCd-Ne-sub"/>
+                                    <constraint firstItem="0di-6R-Qh0" firstAttribute="trailing" secondItem="Npz-Lu-5af" secondAttribute="trailing" id="rUN-Hj-xRe"/>
+                                    <constraint firstItem="Npz-Lu-5af" firstAttribute="top" secondItem="FEA-Rl-AYd" secondAttribute="bottom" constant="23" id="vO9-wB-iIi"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92549019610000005" green="0.92549019610000005" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="s42-CF-M4N" firstAttribute="bottom" secondItem="hgo-Zb-sMA" secondAttribute="bottom" constant="10" id="3x6-i2-h3k"/>
+                            <constraint firstItem="PQb-Rs-NiI" firstAttribute="trailing" secondItem="s42-CF-M4N" secondAttribute="trailing" id="C6O-zP-xFB"/>
+                            <constraint firstItem="hgo-Zb-sMA" firstAttribute="leading" secondItem="s42-CF-M4N" secondAttribute="leading" constant="10" id="QyG-YO-AT1"/>
+                            <constraint firstItem="PQb-Rs-NiI" firstAttribute="leading" secondItem="s42-CF-M4N" secondAttribute="leading" id="UvX-bD-0Wu"/>
+                            <constraint firstItem="PQb-Rs-NiI" firstAttribute="top" secondItem="3al-2r-kTl" secondAttribute="top" id="eL8-KP-VC4"/>
+                            <constraint firstItem="hgo-Zb-sMA" firstAttribute="top" secondItem="PQb-Rs-NiI" secondAttribute="bottom" constant="-69" id="k5o-DB-6ey"/>
+                            <constraint firstItem="s42-CF-M4N" firstAttribute="trailing" secondItem="hgo-Zb-sMA" secondAttribute="trailing" constant="10" id="yz2-4T-YWH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="s42-CF-M4N"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnDontWantStars" destination="Npz-Lu-5af" id="j9a-JV-Kyd"/>
+                        <outlet property="btnGetStars" destination="0di-6R-Qh0" id="UO7-HO-f3r"/>
+                        <outlet property="imgView" destination="PQb-Rs-NiI" id="N8G-Zm-Ldk"/>
+                        <outlet property="viewRefer" destination="hgo-Zb-sMA" id="1d6-bm-p9C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6j5-Q9-ukd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="157.5" y="-92.957746478873247"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="EarnStar_Logo" width="270" height="265"/>
+        <image name="Star" width="146" height="146"/>
+    </resources>
+</document>

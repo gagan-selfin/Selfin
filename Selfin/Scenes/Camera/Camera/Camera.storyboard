@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Nla-94-NOY">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Selfin Camera View Controller-->
+        <scene sceneID="hfP-vu-YOH">
+            <objects>
+                <viewController storyboardIdentifier="Camera" extendedLayoutIncludesOpaqueBars="YES" hidesBottomBarWhenPushed="YES" id="Nla-94-NOY" customClass="SelfinCameraViewController" customModule="Selfin" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3lk-8W-0bS"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZUE-Ko-1PH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JvX-P0-uPb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lb5-dX-qI6" customClass="CameraView" customModule="Selfin" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lb5-dX-qI6" firstAttribute="leading" secondItem="JvX-P0-uPb" secondAttribute="leading" id="Dvg-8C-DMf"/>
+                            <constraint firstAttribute="bottom" secondItem="lb5-dX-qI6" secondAttribute="bottom" id="Zpm-EW-Gfe"/>
+                            <constraint firstItem="lb5-dX-qI6" firstAttribute="top" secondItem="JvX-P0-uPb" secondAttribute="top" id="w9T-lk-2dn"/>
+                            <constraint firstAttribute="trailing" secondItem="lb5-dX-qI6" secondAttribute="trailing" id="zH9-Q9-C7m"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="cameraView" destination="lb5-dX-qI6" id="V7r-tr-fAx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Mk-j5-6AG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-390" y="-39"/>
+        </scene>
+    </scenes>
+</document>

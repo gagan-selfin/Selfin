@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Test Image View Controller-->
+        <scene sceneID="Ycd-Q4-Tcv">
+            <objects>
+                <viewController storyboardIdentifier="testImage" extendedLayoutIncludesOpaqueBars="YES" hidesBottomBarWhenPushed="YES" id="5ff-J5-WTk" customClass="testImageViewController" customModule="Selfin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kDg-go-SEA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OLm-Pq-bvz">
+                                <rect key="frame" x="0.0" y="20" width="375" height="597"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUh-nE-0Kh">
+                                <rect key="frame" x="325" y="617" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="ngI-5Z-9Il"/>
+                                </constraints>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="actionNext:" destination="5ff-J5-WTk" eventType="touchUpInside" id="BpY-Hc-pT4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hbv-2o-duH">
+                                <rect key="frame" x="0.0" y="617" width="325" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="pct-5Y-qrx"/>
+                                </constraints>
+                                <state key="normal" title="upload"/>
+                                <connections>
+                                    <action selector="uploadImage:" destination="5ff-J5-WTk" eventType="touchUpInside" id="0kn-6Y-JT6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lAB-gh-OFU" firstAttribute="trailing" secondItem="OLm-Pq-bvz" secondAttribute="trailing" id="8vF-Es-BmK"/>
+                            <constraint firstItem="lAB-gh-OFU" firstAttribute="trailing" secondItem="bUh-nE-0Kh" secondAttribute="trailing" id="DcB-Jy-1BE"/>
+                            <constraint firstItem="Hbv-2o-duH" firstAttribute="top" secondItem="OLm-Pq-bvz" secondAttribute="bottom" id="Fjm-JT-Rv6"/>
+                            <constraint firstItem="bUh-nE-0Kh" firstAttribute="top" secondItem="OLm-Pq-bvz" secondAttribute="bottom" id="Hh2-Su-NAH"/>
+                            <constraint firstItem="lAB-gh-OFU" firstAttribute="bottom" secondItem="Hbv-2o-duH" secondAttribute="bottom" id="Jcu-yS-mzl"/>
+                            <constraint firstItem="bUh-nE-0Kh" firstAttribute="leading" secondItem="Hbv-2o-duH" secondAttribute="trailing" id="OI7-jl-Z4H"/>
+                            <constraint firstItem="Hbv-2o-duH" firstAttribute="leading" secondItem="lAB-gh-OFU" secondAttribute="leading" id="e08-cA-XNX"/>
+                            <constraint firstItem="OLm-Pq-bvz" firstAttribute="top" secondItem="lAB-gh-OFU" secondAttribute="top" id="n0U-3U-qFb"/>
+                            <constraint firstItem="OLm-Pq-bvz" firstAttribute="leading" secondItem="lAB-gh-OFU" secondAttribute="leading" id="wQ3-uV-9VS"/>
+                            <constraint firstItem="lAB-gh-OFU" firstAttribute="bottom" secondItem="bUh-nE-0Kh" secondAttribute="bottom" id="wii-Hs-NcP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lAB-gh-OFU"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageview" destination="OLm-Pq-bvz" id="xFo-RA-gXb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XAu-7i-M38" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="722" y="67"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Onboarding View Controller-->
+        <scene sceneID="s7j-eQ-DJz">
+            <objects>
+                <viewController storyboardIdentifier="Onboarding" id="sKE-Ja-HBL" customClass="MainOnboardingViewController" customModule="Selfin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="efb-yC-6NR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xzZ-k6-Vf6">
+                                <rect key="frame" x="16" y="94" width="343" height="426"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="G6R-tD-HVs" kind="embed" id="7p2-Rj-s2d"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L10-bq-abW">
+                                <rect key="frame" x="315" y="42" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="6H2-xj-wtx"/>
+                                    <constraint firstAttribute="width" constant="44" id="dst-Js-H2i"/>
+                                </constraints>
+                                <state key="normal" title="Skip">
+                                    <color key="titleColor" red="0.70588235290000001" green="0.70588235290000001" blue="0.70588235290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o6U-ko-grP">
+                                <rect key="frame" x="152" y="589" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Ouc-Je-iRR"/>
+                                    <constraint firstAttribute="width" constant="70" id="dBW-cV-5gH"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="onboarding_next_button"/>
+                            </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="5PB-Tc-pZc">
+                                <rect key="frame" x="165.5" y="528" width="44" height="30"/>
+                                <color key="tintColor" red="1" green="0.4549019608" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="D4M-LI-F5k"/>
+                                    <constraint firstAttribute="width" constant="44" id="tUk-GU-UYx"/>
+                                </constraints>
+                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" red="1" green="0.4549019608" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1q4-lL-pbz" firstAttribute="trailing" secondItem="L10-bq-abW" secondAttribute="trailing" constant="16" id="0TJ-mj-mdA"/>
+                            <constraint firstItem="5PB-Tc-pZc" firstAttribute="top" secondItem="xzZ-k6-Vf6" secondAttribute="bottom" constant="8" id="17c-CG-Nr6"/>
+                            <constraint firstItem="1q4-lL-pbz" firstAttribute="bottom" secondItem="o6U-ko-grP" secondAttribute="bottom" constant="8" id="AQT-EB-kig"/>
+                            <constraint firstItem="o6U-ko-grP" firstAttribute="centerX" secondItem="efb-yC-6NR" secondAttribute="centerX" id="CX4-Yp-Q7v"/>
+                            <constraint firstItem="5PB-Tc-pZc" firstAttribute="centerX" secondItem="o6U-ko-grP" secondAttribute="centerX" id="fCM-81-nY3"/>
+                            <constraint firstItem="1q4-lL-pbz" firstAttribute="bottom" secondItem="xzZ-k6-Vf6" secondAttribute="bottom" constant="147" id="gfs-PZ-4RT"/>
+                            <constraint firstItem="xzZ-k6-Vf6" firstAttribute="leading" secondItem="1q4-lL-pbz" secondAttribute="leading" constant="16" id="mjN-5z-HAP"/>
+                            <constraint firstItem="xzZ-k6-Vf6" firstAttribute="top" secondItem="1q4-lL-pbz" secondAttribute="top" constant="74" id="pI0-C4-Dkg"/>
+                            <constraint firstItem="1q4-lL-pbz" firstAttribute="trailing" secondItem="xzZ-k6-Vf6" secondAttribute="trailing" constant="16" id="ro9-7b-gcs"/>
+                            <constraint firstItem="L10-bq-abW" firstAttribute="top" secondItem="1q4-lL-pbz" secondAttribute="top" constant="22" id="w9F-Sl-NJD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1q4-lL-pbz"/>
+                    </view>
+                    <connections>
+                        <outlet property="nextButton" destination="o6U-ko-grP" id="pi7-yy-ZXN"/>
+                        <outlet property="pageControl" destination="5PB-Tc-pZc" id="lEl-SV-cc7"/>
+                        <outlet property="skipButton" destination="L10-bq-abW" id="NPs-Gg-JSh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UoX-Lh-hZr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1092" y="-79.610194902548727"/>
+        </scene>
+        <!--Onboarding View Controller-->
+        <scene sceneID="VnH-cb-2ZO">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="G6R-tD-HVs" customClass="OnboardingViewController" customModule="Selfin" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="na9-BC-wqk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-370" y="-220"/>
+        </scene>
+        <!--Onboarding Page View Controller-->
+        <scene sceneID="A4J-N5-P0d">
+            <objects>
+                <viewController storyboardIdentifier="OnboardingPage" id="1Tx-mE-4US" customClass="OnboardingPageViewController" customModule="Selfin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JA9-fS-aop">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboarding_page_1" translatesAutoresizingMaskIntoConstraints="NO" id="P4A-yc-1he">
+                                <rect key="frame" x="96" y="28" width="184" height="231"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="231" id="AUo-q0-Z5o"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find Friends" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LTa-cU-G6e">
+                                <rect key="frame" x="16" y="279" width="343" height="26"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am going to find and follow my friends on Selfin." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3lK-KR-hTH">
+                                <rect key="frame" x="16" y="325" width="343" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3lK-KR-hTH" firstAttribute="leading" secondItem="LzA-y5-wBd" secondAttribute="leading" constant="16" id="3MV-jU-f7f"/>
+                            <constraint firstItem="LTa-cU-G6e" firstAttribute="leading" secondItem="LzA-y5-wBd" secondAttribute="leading" constant="16" id="6Vh-p6-Txg"/>
+                            <constraint firstItem="P4A-yc-1he" firstAttribute="leading" secondItem="LzA-y5-wBd" secondAttribute="leading" constant="96" id="E3t-LE-pnJ"/>
+                            <constraint firstItem="LTa-cU-G6e" firstAttribute="top" secondItem="P4A-yc-1he" secondAttribute="bottom" constant="20" id="FB7-QU-Jyn"/>
+                            <constraint firstItem="LzA-y5-wBd" firstAttribute="trailing" secondItem="P4A-yc-1he" secondAttribute="trailing" constant="95" id="Jay-bh-eVi"/>
+                            <constraint firstItem="LzA-y5-wBd" firstAttribute="trailing" secondItem="LTa-cU-G6e" secondAttribute="trailing" constant="16" id="fFJ-Ij-sDL"/>
+                            <constraint firstItem="LzA-y5-wBd" firstAttribute="trailing" secondItem="3lK-KR-hTH" secondAttribute="trailing" constant="16" id="rob-87-ss1"/>
+                            <constraint firstItem="P4A-yc-1he" firstAttribute="top" secondItem="LzA-y5-wBd" secondAttribute="top" constant="8" id="sHX-QV-ZdT"/>
+                            <constraint firstItem="3lK-KR-hTH" firstAttribute="top" secondItem="LTa-cU-G6e" secondAttribute="bottom" constant="20" id="y2i-Lv-PUb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LzA-y5-wBd"/>
+                    </view>
+                    <connections>
+                        <outlet property="image" destination="P4A-yc-1he" id="RVy-tx-ACw"/>
+                        <outlet property="message" destination="3lK-KR-hTH" id="wTa-E7-Q92"/>
+                        <outlet property="messageTitle" destination="LTa-cU-G6e" id="sJj-AT-Jxi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fof-wI-aon" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="276" y="-103"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="onboarding_next_button" width="114" height="114"/>
+        <image name="onboarding_page_1" width="184" height="231"/>
+    </resources>
+</document>
